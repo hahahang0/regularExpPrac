@@ -103,14 +103,55 @@ import re
 
 
 # Solution
-def text_match(text):
-        patterns = 'ab?'
-        if re.search(patterns,  text):
-                return 'Found a match!'
-        else:
-                return('Not matched!')
+# def text_match(text):
+#         patterns = 'ab?'
+#         if re.search(patterns,  text):
+#                 return 'Found a match!'
+#         else:
+#                 return('Not matched!')
 
-print(text_match("ab"))
-print(text_match("abc"))
-print(text_match("abbc"))
-print(text_match("aabbc"))
+# print(text_match("ab"))
+# print(text_match("abc"))
+# print(text_match("abbc"))
+# print(text_match("aabbc"))
+
+
+# 5) Write a Python program that matches a string that has an a followed by three 'b'
+
+
+# def text_match(t_string):
+#     pattern = r'ab{3}?'
+#     if re.search(pattern,t_string):
+#         return "Match Found !"
+#     else :
+#         return "Match not Found !"
+    
+# print(text_match('hang'))
+# print(text_match('aaa'))
+# print(text_match('abbb'))
+
+
+
+
+# 6) Write a Python program that matches a string that has an a followed by two to three 'b'.
+
+# def text_match(t_string):
+#     pattern = r'ab{2,3}?'
+#     if re.search(pattern,t_string):
+#         return 'Match Found'
+#     else :
+#         return 'Match not found'
+    
+
+# print(text_match('hang'))
+# print(text_match('ab'))
+# print(text_match('abb'))
+# print(text_match('abbbb'))
+
+
+# Write a Python program to find the sequences of one upper case letter followed by lower case letters
+
+
+def upper_lower(t_str):
+    pattern = r'a-zA-Z'
+    
